@@ -12,7 +12,7 @@ document.getElementById("dropoutForm").addEventListener("submit", async function
     };
 
     try {
-        const response = await fetch("https://dropout-backend.up.railway.app/predict", {
+        const response = await fetch("https://dropbackend-production.up.railway.app/predict", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(formData)
@@ -43,3 +43,4 @@ document.getElementById("dropoutForm").addEventListener("submit", async function
         console.error("Backend connection error:", err);
     }
 });
+
